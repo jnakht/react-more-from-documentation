@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import MultiUserState from './MultiUserState';
 
 function App() {
   const [names, setName] = useState([]);
@@ -13,7 +14,8 @@ function App() {
     <>
       
       <h1>React More From Documentation</h1>
-      <h3>Inspiring Sculptors: </h3>
+      <MultiUserState></MultiUserState>
+      {/* <h3>Inspiring Sculptors: </h3>
       <input 
         type="text"
         value={singleName}
@@ -24,7 +26,7 @@ function App() {
           {
             names.map(name => <li>{name}</li>)
           }
-      </ul>
+      </ul> */}
     </>
   )
 }
